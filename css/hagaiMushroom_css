@@ -2,6 +2,27 @@
     display: none;
 }
 
+.top-bar {
+    background-color: RGBA(90, 90, 220, 0.5);
+    display: flex;
+    align-content: space-around;
+    height: 100px;
+    width: 100%;
+
+}
+
+.nameplate {
+    background-color: RGBA(90, 90, 220, 0.2);
+    align-content: center;
+    margin-right: 20px;
+    width: 45%;
+}
+
+.bar-item {
+    margin: 20px;
+    width: 20%;
+}
+
 .shop-grid {
     display: grid;
     align-content: space-around;
@@ -22,6 +43,3 @@
     
 }
 
-.price {
-    float:right;
-}
