@@ -1,3 +1,27 @@
 .hidden {
     display: none;
 }
+
+.shop-grid {
+    display: grid;
+    align-content: space-around;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+}
+
+.front-shop-item {
+    background-size: contain;
+    background: no-repeat;
+    margin: 10px;
+    background-image: url("../img/galin_token.png");
+    justify-content: center;
+
+    height: 300px;
+    width: 30vw;
+    
+    
+}
+
+.price {
+    float:right;
+}
