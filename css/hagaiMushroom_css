@@ -1,4 +1,4 @@
-.hidden {
+.dropdown {
     display: none;
 }
 body {
@@ -9,28 +9,43 @@ body {
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
+    height: 90px;
 
 }
 
 /* use @media + width to alter layout below a certain width for
 a more responsive design between devices. */
-.nameplate {
-    align-self: flex-start;
+.logo {
+    justify-content: flex-start;
+    align-self: center;
     margin: -10 10px;
-    flex-basis: 200px;
+    flex-basis: 150px;
     flex-grow: 2;
 }
 
 /* change to UL perhaps to integrate links, hover changes
 display property of drop-down menus? */
-.bar-item {
-    justify-content: center;
-    align-self: center;
+.menus {
+    align-self: flex-start;
+    display: flex;
+    justify-content: flex-start;
+    align-self: flex-start;
     margin:-10px 10px;
     padding: 20px;
     /* width: 25%; */
 }
 
+a {
+    text-decoration: none;
+    color: RGB(0,0,0);
+}
+
+.menu-header {
+    display: flex;
+    float: left;
+    margin-top: -15px;
+    padding: 0px 20px;
+}
 .shop-container {
     display: flex;
     align-content: flex-start;
