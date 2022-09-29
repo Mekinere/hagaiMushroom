@@ -1,6 +1,20 @@
+@media (width <= 870px) {
+    .shop-menu {
+        display: none;
+    }
+}
+
+@media (width >= 1120px) {
+    .shop-item {
+        width:25%;
+    }
+    
+}
+
 .dropdown {
     display: none;
 }
+
 body {
     background:RGBA(90, 90, 220, 0.2);
 }
@@ -27,12 +41,12 @@ a more responsive design between devices. */
 display property of drop-down menus? */
 .menus {
     align-self: flex-start;
+
     display: flex;
     justify-content: flex-start;
     align-self: flex-start;
     margin:-10px 10px;
     padding: 20px;
-    /* width: 25%; */
 }
 
 a {
@@ -46,6 +60,7 @@ a {
     margin-top: -15px;
     padding: 0px 20px;
 }
+
 .shop-container {
     display: flex;
     align-content: flex-start;
@@ -54,61 +69,40 @@ a {
 
 }
 
-.shop-item-1 {
-
-    margin: 10px;
-    background-image: url("../img/galin_token.png");
+.shop-item {
     justify-content: center;
-    min-width: 256px;
-
-    height: 256px;    
-}
-
-.shop-item-2 {
+    border: 10px;
+    border-color: black;
     margin: 10px;
-    background-image: url("../img/visitor_token.png");
-    justify-content: center;
-
     min-width: 256px;
-
-    height: 256px;  
-}
-
-.shop-item-3 {
-    margin: 10px;
-    background-image: url("../img/Alina_token.png");
-    justify-content: center;
-
-    min-width: 256px;
-
-    height: 256px;   
-}
-
-.shop-item-4 {
-    margin: 10px;
-    background-image: url("../img/stitch_token.png");
-    justify-content: center;
-    min-width: 256px;
-
-    height: 256px;   
-}
-
-.shop-item-5 {
-    margin: 10px;
-    background-image: url("../img/stitch_token.png");
-    justify-content: center;
-
-    min-width: 256px;
-
-    height: 256px;   
-}
-
-.shop-item-6 {
-    margin: 10px;
-    background-image: url("../img/stitch_token.png");
-    justify-content: center;
-
-    min-width: 256px;
-
     height: 256px;
+    background: no-repeat;
+}
+
+#item-1 {
+    background-image: url("../img/galin_token.png");
+
+}
+
+#item-2 {
+    background-image: url("../img/visitor_token.png");
+
+}
+
+#item-3 {
+    background-image: url("../img/Alina_token.png");
+  
+}
+
+#item-4 {
+    background-image: url("../img/stitch_token.png");
+ 
+}
+
+#item-5 {
+    background-image: url("../img/stitch_token.png"); 
+}
+
+#item-6 {
+    background-image: url("../img/stitch_token.png");
 }
