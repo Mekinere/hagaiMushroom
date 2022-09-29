@@ -5,8 +5,8 @@
 }
 
 @media (width >= 1120px) {
-    .shop-item {
-        width:25%;
+    .shop-container > * {
+        width:30%;
     }
     
 }
