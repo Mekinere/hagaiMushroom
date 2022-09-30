@@ -4,6 +4,8 @@
 
 body {
     background:RGBA(200, 200, 255);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
 }
 .top-bar {
     background: linear-gradient(90deg, RGB(130, 130, 220) 0%, RGB(160,160,250) 50%, RGB(200,200,255) 100%);
@@ -55,7 +57,7 @@ display property of drop-down menus? */
 
 }
 
-@media (width < 840px) {
+@media all and (width < 840px) {
     .menus > * {
         display: none;
     }
@@ -74,72 +76,62 @@ display property of drop-down menus? */
     background-repeat: no-repeat;
     background-position: center;
     margin-top: 80px;
+
     
 }
 
 .banner-text {
     text-align: center;
+    line-height: 10px;
 }
 
 .banner-button {
     align-self: center;
     height: 40px;
     width: 100px;
+    background-color: rgb(195, 223, 211);
+    border: none;
+    font-size: 16px;
+    font-weight: solid;
 }
-
-
-
-.shop-container {
+.featured {
     display: flex;
-    align-content: flex-start;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    /* padding-top: 90px; */
-
+    flex: 1;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    overflow: auto;
+    flex-wrap: nowrap;
 }
-
-
-
-.shop-item {
-    justify-content: center;
-
-    margin: 10px;
-    width: 256px;
+.feature-item {
     height: 256px;
-    background: stretch;
+    min-width: 256px;
+    margin: 10px;
+    background: white; 
 }
 
-@media (width >= 1120px) {
-    .shop-container > * {
-        margin: 0em 2em;
-    }
-    
+#syls-item-1 {
+    background-image: url(../img/visitor_token.png);
+}
+#syls-item-2 {
+    background-image: url(../img/visitor_token.png);
+}
+#syls-item-3 {
+    background-image: url(../img/visitor_token.png);
+}
+#syls-item-4 {
+    background-image: url(../img/visitor_token.png);
 }
 
-#item-1 {
-    background-image: url("../img/galin_token.png");
-
+#danu-item-1 {
+    background-image: url(../img/scav_token.png);
 }
-
-#item-2 {
-    background-image: url("../img/visitor_token.png");
-
+#danu-item-2 {
+    background-image: url(../img/scav_token.png);
 }
-
-#item-3 {
-    background-image: url("../img/Alina_token.png");
-  
+#danu-item-3 {
+    background-image: url(../img/scav_token.png);
 }
-
-#item-4 {
-    background-image: url("../img/stitch_token.png");
- 
-}
-
-#item-5 {
-    background-image: url("../img/stitch_token.png"); 
-}
-
-#item-6 {
-    background-image: url("../img/stitch_token.png");
+#danu-item-4 {
+    background-image: url(../img/scav_token.png);
 }
