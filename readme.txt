@@ -13,3 +13,6 @@ css notes:
 *use a flexbox with buttons + jscript to toggle "Hidden" for headers/tabs of shops
 *use grid of div/buttons(?) for items, which reveal a box with info on hover
 *
+
+@media goes anywher, after overwrite
+js bottom of html
