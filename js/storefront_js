@@ -2,6 +2,10 @@ const syls = document.getElementById("syls");
 
 const sylsDrop = document.getElementById("syls-drop");
 
-syls.addEventListener('mouseover', ()=> {
+syls.addEventListener('mouseenter', ()=> {
+    sylsDrop.classList.toggle("hidden");
+});
+
+syls.addEventListener('mouseleave', ()=> {
     sylsDrop.classList.toggle("hidden");
 });

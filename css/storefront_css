@@ -91,12 +91,17 @@ display property of drop-down menus? */
 
 .banner-button {
     align-self: center;
+
+    text-align: center;
+    line-height: 40px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: solid;
+    color: #000;
     height: 40px;
     width: 100px;
     background-color: rgb(195, 223, 211);
-    border: none;
-    font-size: 16px;
-    font-weight: solid;
+
 }
 .featured {
     display: flex;
