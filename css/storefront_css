@@ -1,4 +1,4 @@
-.dropdown {
+.hidden {
     display: none;
 }
 
@@ -46,6 +46,10 @@ display property of drop-down menus? */
     text-decoration: none;
     display:block;
     color: RGB(0,0,0);
+}
+
+.shop-title:hover {
+    color: white;
 }
 
 .menu-header {

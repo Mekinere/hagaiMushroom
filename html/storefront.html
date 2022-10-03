@@ -3,18 +3,20 @@
     <head>
         <link rel="stylesheet" type="text/css" href="../css/storefront_css">
         <title>Little Shop</title> 
+        <script src="../js/storefront_js" defer></script>
     </head>
+
 
     <body>
         <div class="top-bar">
             <div class="logo"><h1>Storefront</h1></div>
             <div class="menus">
                 <ul>
-                    <li class="menu-header" id="syls">
+                    <li class="menu-header">
                         <a class="menu-link" href="#">
                             <div class="shop-menu">
-                                <h2>Sylstria</h2>
-                                    <div class="dropdown" id="syls-drop">
+                                <h2 class="shop-title" id="syls">Sylstria</h2>
+                                    <div class="hidden" id="syls-drop">
                                         <h3>Written Word</h3>
                                         <h3>Into the Hollow</h3>
                                     </div>
@@ -24,8 +26,8 @@
                     <li class="menu-header" id="danu">
                         <a class="menu-link" href="#">
                             <div class="shop-menu">
-                                <h2>Danu</h2>
-                                <div class="dropdown" id="danu-drop">
+                                <h2 class="shop-title">Danu</h2>
+                                <div class="hidden" id="danu-drop">
                                     <h3>Janus</h3>
                                     <h3>Kernel Panic</h3>
                                 </div>
@@ -35,9 +37,9 @@
                     <li class="menu-header" id="myce">
                         <a class="menu-link" href="#">
                             <div class="shop-menu">
-                                <h2>Mycelia</h2>
-                                <div class="dropdown" id="myce-drop">
-
+                                <h2 class="shop-title">Mycelia</h2>
+                                <div class="hidden" id="myce-drop">
+                                    <h3>The Tower</h3>
                                 </div>
                             </div>
                         </a>
