@@ -1,7 +1,7 @@
 body {
     background:RGBA(200, 200, 255);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-
+    height: 2500px;
 }
 .top-bar {
     background: linear-gradient(90deg, RGB(130, 130, 220) 0%, RGB(160,160,250) 50%, RGB(200,200,255) 100%);
@@ -11,11 +11,13 @@ body {
     height: 80px;
     width: 100%;
     position: fixed;
+    z-index: 2;
     top: 0px;
+    border-bottom: RGB(0,0,0) 1px outset;
 
 }
 
-.borger {
+#borger {
     display: none;
     align-self: center;
     text-decoration: none;
@@ -31,28 +33,29 @@ body {
 a more responsive design between devices. */
 .logo {
     justify-self: flex-start;
-    align-self: center;
+    align-self: flex-start;
     flex-wrap: nowrap;
-    margin: -10 10px;
+    margin: -10 -10px;
     flex-basis: 150px;
-    flex-grow: 2;
+    flex-grow: 1;
 }
 
 /* change to UL perhaps to integrate links, hover changes
 display property of drop-down menus? */
 .menus {
     display: flex;
-    justify-content: space-around;
+    float:left;
+    justify-content: flex-start;
     align-content: flex-start;
     align-self: flex-start;
+    flex-wrap: nowrap;
     margin-top: -25px;
-    /* margin:-10px 10px; */
     padding: 30px;
 }
 
 .menu-link {
     text-decoration: none;
-    display:block;
+    display: block;
     color: RGB(0,0,0);
 }
 
@@ -70,38 +73,46 @@ display property of drop-down menus? */
 
 }
 
-
 @media all and (width < 840px) {
     .menus > * {
         display: none;
     }
-    .borger {
+
+    #borger {
         display: block;
     }
 }
 
 /* work in progress */
-.borger-menu {
-    display: flex;
 
-    position:absolute;
-    top: 40px;
-}
 
 .sub-menu {
     display: flex;
     background: linear-gradient(90deg, RGB(130, 130, 220) 0%, RGB(160,160,250) 50%, RGB(200,200,255) 100%);
     align-content: flex-start;
-    justify-content: flex-start;
+    justify-content: space-around;
     height:min-content;
     width: 100%;
     position: fixed;
+    z-index: 1;
     top: 80px;
+    border-top: RGB(0,0,0) 1px outset;
+    box-shadow: 5px 2px 3px RGB(0,0,0);
 
 }
 
-.hidden {
-    display: none;
+.borger-menu {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(90deg, RGB(130, 130, 220) 0%, RGB(160,160,250) 50%, RGB(200,200,255) 100%);
+    width: 100%;
+    position:fixed;
+    z-index: 1;
+    top: 80px;
+}
+
+.sub-menu-text {
+    margin: 0px 20px;
 }
 
 .feature-banner {
@@ -140,8 +151,14 @@ display property of drop-down menus? */
     background-color: rgb(195, 223, 211);
 
 }
+
 .featured {
+    position: relative;
+    z-index: 0;
+    right: -25%;
     display: flex;
+    min-width: 256px;
+    width: 50%;
     flex: 1;
     flex-direction: row;
     align-items: flex-start;
@@ -180,4 +197,8 @@ display property of drop-down menus? */
 }
 #danu-item-4 {
     background-image: url(../img/scav_token.png);
+}
+
+.hidden {
+    display: none;
 }

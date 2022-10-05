@@ -44,10 +44,13 @@ myceDrop.addEventListener('mouseleave', ()=> {
 
 
 // borger work in progress, not working
-const borger = getElementsByClassName("borger");
+const borger = getElementById("borger");
 
-const borgerMenu = getElementsByClassName("borger-menu");
+const borgerDrop = getElementById("borger-drop");
 
-borger.addEventListener('onclick', ()=> {
-    borgerMenu.classList.toggle("hidden");
+borger.addEventListener('mouseenter', ()=> {
+    borgerDrop.classList.remove("hidden");
 });
+
+// featured items will be in sets instead of overflows,
+// with switch/case used to swap between them on press of button
