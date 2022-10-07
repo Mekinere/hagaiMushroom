@@ -11,7 +11,7 @@
     <body>
         <div>
             <div class="top-bar">
-                <a href="#" class="icon" id="borger">
+                <a href="#a" class="icon" id="burger-icon">
                     <i class="fa fa-bars"></i>
                 </a>
                 <div class="logo"><h1>Storefront</h1></div>
@@ -51,16 +51,16 @@
                 <a class="menu-link" href="#"><div class="sub-menu-text"><h3>Kernel Panic</h3></div></a>
             </div>
             <div class="hidden sub-menu" id="myce-drop">
-                <a class="menu-link" href="#"><h3>The Tower</h3></a>
+                <a class="menu-link" href="#"><div class="sub-menu-text"><h3>The Tower</h3></div></a>
             </div>
             <!-- work in progress borger -->
             <div class="hidden borger-menu" id="borger-drop">
-                <a class="menu-link" href="#"><div><h2>Sylstria</h2></div></a>
-                <a class="menu-link" href="#"><div><h2>Danu</h2></div></a>
-                <a class="menu-link" href="#"><div><h2>Mycelia</h2></div></a>
+                <a class="menu-link" href="#"><div class="sub-menu-text"><h2>Sylstria</h2></div></a>
+                <a class="menu-link" href="#"><div class="sub-menu-text"><h2>Danu</h2></div></a>
+                <a class="menu-link" href="#"><div class="sub-menu-text"><h2>Mycelia</h2></div></a>
             </div>
         </div>
-        
+
 
         <div class="feature-banner">
             <h2 class="banner-text">Shrimp Fried Rice</h2>
@@ -75,20 +75,38 @@
         reuse shop-container as a store page under 
         one of the tabs (syls, danu, etc)  -->
         <h3 class="item-text">New Findings on the Sylstrian Continent</h3>
-        <div class="featured">
-            <div class="feature-item" id="syls-item-1"></div>
-            <div class="feature-item" id="syls-item-2"></div>
-            <div class="feature-item" id="syls-item-3"></div>
-            <div class="feature-item" id="syls-item-4"></div>
+        <div class="featured-wrap">
+            <a href="#syls" class="scroll"><div class="scroll-back" id="syls-back"><i class="fa fa-chevron-left"></i></div></a>
+            <div class="featured" id="syls-feature">
+                <div class="feature-item" id="syls-item-1"></div>
+                <div class="feature-item" id="syls-item-2"></div>
+                <div class="feature-item" id="syls-item-3"></div>
+                <div class="feature-item" id="syls-item-4"></div>
+            </div>
+            <a href="#syls" class="scroll"><div class="scroll-fwrd" id="syls-fwrd"><i class="fa fa-chevron-right"></i></div></a>
         </div>
         <h3 class="item-text">Ancient Relics from the Danu Galaxy</h3>
-        <div class="featured">
-            <div class="feature-item" id="danu-item-1"></div>
-            <div class="feature-item" id="danu-item-2"></div>
-            <div class="feature-item" id="danu-item-3"></div>
-            <div class="feature-item" id="danu-item-4"></div>
+        <div class="featured-wrap">
+            <a href="#syls" class="scroll"><div class="scroll-back" id="danu-back"><i class="fa fa-chevron-left"></i></div></a>
+            <div class="featured" id="danu-feature">
+                <div class="feature-item" id="danu-item-1"></div>
+                <div class="feature-item" id="danu-item-2"></div>
+                <div class="feature-item" id="danu-item-3"></div>
+                <div class="feature-item" id="danu-item-4"></div>
+            </div>
+            <a href="#syls" class="scroll"><div class="scroll-fwrd" id="danu-fwrd"><i class="fa fa-chevron-right"></i></div></a>
         </div>
-
+        <h3 class="item-text">I'm out of fun ones, this is for bugs.</h3>
+        <div class="featured-wrap">
+            <a href="#myce" class="scroll"><div class="scroll-back" id="myce-back"><i class="fa fa-chevron-left"></i></div></a>
+            <div class="featured" id="myce-feature">
+                <div class="feature-item" id="myce-item-1"></div>
+                <div class="feature-item" id="myce-item-2"></div>
+                <div class="feature-item" id="myce-item-3"></div>
+                <div class="feature-item" id="myce-item-4"></div>
+            </div>
+            <a href="#myce" class="scroll"><div class="scroll-fwrd" id="myce-fwrd"><i class="fa fa-chevron-right"></i></div></a>
+        </div>
         
     </body>
 </html>

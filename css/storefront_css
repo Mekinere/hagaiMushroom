@@ -2,6 +2,7 @@ body {
     background:RGBA(200, 200, 255);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     height: 2500px;
+    margin-left: 0px;
 }
 .top-bar {
     background: linear-gradient(90deg, RGB(130, 130, 220) 0%, RGB(160,160,250) 50%, RGB(200,200,255) 100%);
@@ -17,7 +18,7 @@ body {
 
 }
 
-#borger {
+.icon {
     display: none;
     align-self: center;
     text-decoration: none;
@@ -27,6 +28,7 @@ body {
 }
 .icon:hover {
     background-color: RGB(140, 140, 230);
+    color: white;
 }
 
 /* use @media + width to alter layout below a certain width for
@@ -35,7 +37,7 @@ a more responsive design between devices. */
     justify-self: flex-start;
     align-self: flex-start;
     flex-wrap: nowrap;
-    margin: -10 -10px;
+    margin-left: 10px;
     flex-basis: 150px;
     flex-grow: 1;
 }
@@ -73,13 +75,25 @@ display property of drop-down menus? */
 
 }
 
-@media all and (width < 840px) {
-    .menus > * {
+@media all and (max-width: 840px) {
+    .menus {
         display: none;
     }
 
-    #borger {
+    .sub-menu {
+        display: none;
+    }
+
+    #burger-icon {
         display: block;
+    }
+    .featured {
+        -ms-overflow-style: auto;
+        scrollbar-width: auto;  
+    }
+
+    .featured::-webkit-scrollbar {
+        display: auto;
     }
 }
 
@@ -94,11 +108,10 @@ display property of drop-down menus? */
     height:min-content;
     width: 100%;
     position: fixed;
-    z-index: 1;
+    z-index: 2;
     top: 80px;
     border-top: RGB(0,0,0) 1px outset;
     box-shadow: 5px 2px 3px RGB(0,0,0);
-
 }
 
 .borger-menu {
@@ -107,12 +120,15 @@ display property of drop-down menus? */
     background: linear-gradient(90deg, RGB(130, 130, 220) 0%, RGB(160,160,250) 50%, RGB(200,200,255) 100%);
     width: 100%;
     position:fixed;
-    z-index: 1;
+    z-index: 3;
     top: 80px;
+    border-top: RGB(0,0,0) 1px outset;
+    box-shadow: 5px 2px 3px RGB(0,0,0);
 }
 
 .sub-menu-text {
-    margin: 0px 20px;
+    border-top: RGB(0,0,0) 1px outset;
+    padding: 0px 20px;
 }
 
 .feature-banner {
@@ -128,8 +144,6 @@ display property of drop-down menus? */
     background-repeat: no-repeat;
     background-position: center;
     margin-top: 80px;
-
-    
 }
 
 .banner-text {
@@ -151,52 +165,128 @@ display property of drop-down menus? */
     background-color: rgb(195, 223, 211);
 
 }
+.banner-button:hover {
+    color: white;
+}
 
-.featured {
+.featured-wrap {
     position: relative;
     z-index: 0;
     right: -25%;
     display: flex;
-    min-width: 256px;
-    width: 50%;
+    width: 670px;
+    height: min-content;
+    justify-content: center;
+    align-items: center;
+}
+
+.scroll {
+    margin: 0px 10px;
+    height: 100px;
+    width: 50px;
+    background-color: RGBA(150, 150, 150, 0.5);
+    text-align: center;
+    line-height: 100px;
+    font-size: 30px;
+    text-decoration: none;
+    color: #000;
+}
+
+.featured {
+    margin: 0px;
+    display: flex;
+    width: 550px;
     flex: 1;
     flex-direction: row;
     align-items: flex-start;
     justify-content: flex-start;
-    overflow: auto;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    -ms-overflow-style: none;
+    scrollbar-width: none;  
     flex-wrap: nowrap;
 }
+
+.featured::-webkit-scrollbar {
+    display: none;
+}
+
+
 .feature-item {
+    scroll-snap-align: start;
     height: 256px;
     min-width: 256px;
     margin: 10px;
     background: white; 
 }
 
+@media all and (max-width: 840px) {
+    .menus {
+        display: none;
+    }
+
+    .sub-menu {
+        display: none;
+    }
+
+    .scroll {
+        display:none;
+    }
+
+    #burger-icon {
+        display: block;
+    }
+    .featured-wrap {
+        left: 25px;
+        width: 550px;
+    }
+    .featured {
+        -ms-overflow-style: auto;
+        scrollbar-width: auto;  
+    }
+
+    .featured::-webkit-scrollbar {
+        display: auto;
+    }
+}
+
 #syls-item-1 {
     background-image: url(../img/visitor_token.png);
 }
 #syls-item-2 {
-    background-image: url(../img/visitor_token.png);
+    background-image: url(../img/Alina_token.png);
 }
 #syls-item-3 {
-    background-image: url(../img/visitor_token.png);
+    background-image: url(../img/stitch_token.png);
 }
 #syls-item-4 {
-    background-image: url(../img/visitor_token.png);
+    background-image: url(../img/galin_token.png);
 }
 
 #danu-item-1 {
     background-image: url(../img/scav_token.png);
 }
 #danu-item-2 {
-    background-image: url(../img/scav_token.png);
+    background-image: url(../img/wesson_token.png);
 }
 #danu-item-3 {
-    background-image: url(../img/scav_token.png);
+    background-image: url(../img/fish_token.png);
 }
 #danu-item-4 {
-    background-image: url(../img/scav_token.png);
+    background-image: url(../img/skathari_token.png);
+}
+
+#myce-item-1 {
+    background-image: url(../img/ogre_token.png);
+}
+#myce-item-2 {
+    background-image: url(../img/firefly_token.png);
+}
+#myce-item-3 {
+    background-image: url(../img/firefly_token.png);
+}
+#myce-item-4 {
+    background-image: url(../img/ogre_token.png);
 }
 
 .hidden {

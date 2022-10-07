@@ -1,3 +1,10 @@
+const mediaBreak = window.matchMedia("max-width:840px");
+
+if (mediaBreak.matches) {
+    document.body.style.backgroundColor = "yellow";
+}
+
+
 const topBar = document.getElementsByClassName("top-bar");
 
 const syls = document.getElementById("syls");
@@ -44,13 +51,77 @@ myceDrop.addEventListener('mouseleave', ()=> {
 
 
 // borger work in progress, not working
-const borger = getElementById("borger");
+const borger = document.getElementById("burger-icon");
 
-const borgerDrop = getElementById("borger-drop");
+const borgerDrop = document.getElementById("borger-drop");
 
-borger.addEventListener('mouseenter', ()=> {
-    borgerDrop.classList.remove("hidden");
+borger.addEventListener('click', ()=> {
+    borgerDrop.classList.toggle("hidden");
 });
+
+
+const sylsBackS = document.getElementById("syls-back");
+const sylsFwrdS = document.getElementById("syls-fwrd");
+const sylsFeature = document.getElementById("syls-feature");
+
+sylsBackS.addEventListener('click', ()=> {
+    sylsFeature.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: 'smooth'
+    });
+});
+
+sylsFwrdS.addEventListener('click', ()=> {
+    sylsFeature.scrollTo({
+        top: 0,
+        left: 500,
+        behavior: 'smooth'
+    });
+});
+
+
+const danuBackS = document.getElementById("danu-back");
+const danuFwrdS = document.getElementById("danu-fwrd");
+const danuFeature = document.getElementById("danu-feature");
+
+danuBackS.addEventListener('click', ()=> {
+    danuFeature.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: 'smooth'
+    });
+});
+
+danuFwrdS.addEventListener('click', ()=> {
+    danuFeature.scrollTo({
+        top: 0,
+        left: 500,
+        behavior: 'smooth'
+    });
+});
+
+const myceBackS = document.getElementById("myce-back");
+const myceFwrdS = document.getElementById("myce-fwrd");
+const myceFeature = document.getElementById("myce-feature");
+
+myceBackS.addEventListener('click', ()=> {
+    myceFeature.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: 'smooth'
+    });
+});
+
+myceFwrdS.addEventListener('click', ()=> {
+    myceFeature.scrollTo({
+        top: 0,
+        left: 500,
+        behavior: 'smooth'
+    });
+});
+
+
 
 // featured items will be in sets instead of overflows,
 // with switch/case used to swap between them on press of button
