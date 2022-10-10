@@ -65,19 +65,11 @@ const sylsFwrdS = document.getElementById("syls-fwrd");
 const sylsFeature = document.getElementById("syls-feature");
 
 sylsBackS.addEventListener('click', ()=> {
-    sylsFeature.scrollTo({
-        top: 0,
-        left: 0,
-        behavior: 'smooth'
-    });
+    sylsFeature.scrollLeft -= 300;
 });
 
 sylsFwrdS.addEventListener('click', ()=> {
-    sylsFeature.scrollTo({
-        top: 0,
-        left: 500,
-        behavior: 'smooth'
-    });
+    sylsFeature.scrollLeft += 300;
 });
 
 
@@ -86,19 +78,12 @@ const danuFwrdS = document.getElementById("danu-fwrd");
 const danuFeature = document.getElementById("danu-feature");
 
 danuBackS.addEventListener('click', ()=> {
-    danuFeature.scrollTo({
-        top: 0,
-        left: 0,
-        behavior: 'smooth'
-    });
+    danuFeature.scrollLeft -= 300;
 });
 
 danuFwrdS.addEventListener('click', ()=> {
-    danuFeature.scrollTo({
-        top: 0,
-        left: 500,
-        behavior: 'smooth'
-    });
+    danuFeature.scrollLeft += 300;
+
 });
 
 const myceBackS = document.getElementById("myce-back");
@@ -106,22 +91,12 @@ const myceFwrdS = document.getElementById("myce-fwrd");
 const myceFeature = document.getElementById("myce-feature");
 
 myceBackS.addEventListener('click', ()=> {
-    myceFeature.scrollTo({
-        top: 0,
-        left: 0,
-        behavior: 'smooth'
-    });
+    myceFeature.scrollLeft -= 300;
 });
 
 myceFwrdS.addEventListener('click', ()=> {
-    myceFeature.scrollTo({
-        top: 0,
-        left: 500,
-        behavior: 'smooth'
-    });
+    myceFeature.scrollLeft += 300;
+
 });
 
 
-
-// featured items will be in sets instead of overflows,
-// with switch/case used to swap between them on press of button
