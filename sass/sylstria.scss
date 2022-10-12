@@ -1,3 +1,4 @@
+@use 'generic';
 @use 'navbar';
 
 
@@ -7,7 +8,7 @@
     align-content: flex-start;
     justify-content: space-around;
     flex-wrap: wrap;
-    /* padding-top: 90px; */
+    margin-top: 80px;
 
 }
 

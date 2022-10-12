@@ -1,3 +1,9 @@
+body {
+  background: RGBA(200, 200, 255);
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  margin: 0px 0px;
+}
+
 .top-bar {
   background: linear-gradient(90deg, RGB(130, 130, 220) 0%, RGB(160, 160, 250) 50%, RGB(200, 200, 255) 100%);
   display: flex;
@@ -111,7 +117,7 @@
   align-content: flex-start;
   justify-content: space-around;
   flex-wrap: wrap;
-  /* padding-top: 90px; */
+  margin-top: 80px;
 }
 
 .shop-item {
