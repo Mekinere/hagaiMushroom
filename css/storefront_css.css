@@ -137,7 +137,9 @@ body {
 .banner-button:hover {
     color: white;
 }
-
+.item-text {
+    margin-left: 10px;
+}
 .featured-wrap {
     display: flex;
     width: 680px;
@@ -209,9 +211,6 @@ body {
         width: 260px;
     }
 
-    .featured::-webkit-scrollbar {
-        display: auto;
-    }
 }
 
 #syls-item-1 {

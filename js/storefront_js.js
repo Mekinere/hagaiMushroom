@@ -1,63 +1,55 @@
-const mediaBreak = window.matchMedia("max-width:840px");
+// const topBar = document.getElementsByClassName("top-bar");
 
-if (mediaBreak.matches) {
-    document.body.style.backgroundColor = "yellow";
-}
+// const syls = document.getElementById("syls");
 
+// const sylsDrop = document.getElementById("syls-drop");
 
-const topBar = document.getElementsByClassName("top-bar");
+// syls.addEventListener('mouseenter', ()=> {
+//     danuDrop.classList.add("hidden");
+//     myceDrop.classList.add("hidden");
+//     sylsDrop.classList.remove("hidden");
+// });
 
-const syls = document.getElementById("syls");
+// sylsDrop.addEventListener('mouseleave', ()=> {
+//     sylsDrop.classList.add("hidden");
+// });
 
-const sylsDrop = document.getElementById("syls-drop");
+// const danu = document.getElementById("danu");
 
-syls.addEventListener('mouseenter', ()=> {
-    danuDrop.classList.add("hidden");
-    myceDrop.classList.add("hidden");
-    sylsDrop.classList.remove("hidden");
-});
+// const danuDrop = document.getElementById("danu-drop");
 
-sylsDrop.addEventListener('mouseleave', ()=> {
-    sylsDrop.classList.add("hidden");
-});
+// danu.addEventListener('mouseenter', ()=> {
+//     sylsDrop.classList.add("hidden");
+//     myceDrop.classList.add("hidden");
+//     danuDrop.classList.remove("hidden");
+// });
 
-const danu = document.getElementById("danu");
+// danuDrop.addEventListener('mouseleave', ()=> {
+//     danuDrop.classList.add("hidden");
+// });
 
-const danuDrop = document.getElementById("danu-drop");
+// const myce = document.getElementById("myce");
 
-danu.addEventListener('mouseenter', ()=> {
-    sylsDrop.classList.add("hidden");
-    myceDrop.classList.add("hidden");
-    danuDrop.classList.remove("hidden");
-});
+// const myceDrop = document.getElementById("myce-drop");
 
-danuDrop.addEventListener('mouseleave', ()=> {
-    danuDrop.classList.add("hidden");
-});
+// myce.addEventListener('mouseenter', ()=> {
+//     sylsDrop.classList.add("hidden");
+//     danuDrop.classList.add("hidden");
+//     myceDrop.classList.remove("hidden");
+// });
 
-const myce = document.getElementById("myce");
-
-const myceDrop = document.getElementById("myce-drop");
-
-myce.addEventListener('mouseenter', ()=> {
-    sylsDrop.classList.add("hidden");
-    danuDrop.classList.add("hidden");
-    myceDrop.classList.remove("hidden");
-});
-
-myceDrop.addEventListener('mouseleave', ()=> {
-    myceDrop.classList.add("hidden");
-});
+// myceDrop.addEventListener('mouseleave', ()=> {
+//     myceDrop.classList.add("hidden");
+// });
 
 
-// borger work in progress, not working
-const borger = document.getElementById("burger-icon");
+// const borger = document.getElementById("burger-icon");
 
-const borgerDrop = document.getElementById("borger-drop");
+// const borgerDrop = document.getElementById("borger-drop");
 
-borger.addEventListener('click', ()=> {
-    borgerDrop.classList.toggle("hidden");
-});
+// borger.addEventListener('click', ()=> {
+//     borgerDrop.classList.toggle("hidden");
+// });
 
 
 const sylsBackS = document.getElementById("syls-back");
